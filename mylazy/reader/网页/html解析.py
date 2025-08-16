@@ -14,7 +14,7 @@ def processHtml(file, extra_info=None):
     return [node]
 
 
-doc = Document(dataset_path="Y:/mylazy/网页")  ###抓取本地文件位置
+doc = Document(dataset_path="/mylazy/reader/网页")  ###抓取本地文件位置
 doc.add_reader("*.html", processHtml)
 data = doc._impl._reader.load_data(input_files=["Y:/mylazy/网页/webPage.html"]) ###抓取具体文件
 print(f"data: {data}")

@@ -42,7 +42,7 @@ class ImageDescriptionReader(ReaderBase):
         return [DocNode(text=text_str, metadata=extra_info or {})]
 
 
-doc = Document(dataset_path="Y:/mylazy")
+doc = Document(dataset_path="/mylazy")
 doc.add_reader("*.png", ImageDescriptionReader)
 data = doc._impl._reader.load_data(input_files=["Y:/mylazy/pic.png"])
 print(f"data: {data}")
