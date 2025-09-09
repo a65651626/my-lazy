@@ -4,7 +4,7 @@ import os
 os.environ["LAZYLLM_SENSENOVA_API_KEY"] = "sk-cacM6j9A69tdMa3ih5Cas4OxssqgWZiX"
 
 import lazyllm
-documents = lazyllm.Document(dataset_path="Y:/data_kb")
+documents = lazyllm.Document(dataset_path="data_kb")
 
 retriever = lazyllm.Retriever(doc=documents,group_name="CoarseChunk",similarity="bm25_chinese",topk=3, output_format='content', join=' ' )
 retriever.start()

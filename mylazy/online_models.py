@@ -39,7 +39,7 @@ llm = OnlineChatModule(
 
 embedding_model = OnlineEmbeddingModule(
     source="doubao",
-    embed_model_name="doubao-embedding-large-text-240915",
+    embed_model_name="doubao-embedding-text-240715",   #doubao-embedding-large-text-240915
     api_key=DOUBAO_API_KEY,
 )
 
